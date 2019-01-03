@@ -1,3 +1,10 @@
+h1{
+    color:rgb(255, 255, 255);
+}
+h6{
+    color:rgb(255, 255, 255);
+    padding:10px;
+}
 .app {
     position: relative;
 }
@@ -11,6 +18,45 @@
 .hero-object{
     text-align:center
 }
+section{
+    height:670px;
+}
+.feature {
+    display: flex;
+    width: 100%;
+    padding-top:40px;
+}
+.feature--image > img{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.feature--right .feature__icon {
+    margin-right: 0;
+    margin-left: 40px;
+    order: 2;
+}
+
+.feature--right .feature__content {
+    order: 1;
+    text-align: right;
+}
+
+@media screen and ( max-width: 1200px){
+    .form-group{
+        text-align: center;
+    }
+    .hero{
+        height: 730px;
+        padding-top: 181px;
+    }
+    .section2{
+        overflow:hidden;
+        height: 800px;
+    }
+    .section3{
+        height:800px;
+    }
+}
+
 @media only screen and (min-width: 992px){  
     .app-header__list-item {
         width: initial;
@@ -21,4 +67,25 @@
    .navbar-toggler {
        display: none;
    }
+
+   /* .feature__content {
+    order: 2;
+    text-align: left;
+    } */
+}
+
+@media (max-width:991px){
+    .section3{
+        height:1300px;
+    }
+    .feature--right .feature__icon {
+        margin-left: 0;
+        margin-right: 20px;
+        order: 1;
+        width:40px;
+    }
+    .feature--right .feature__content {
+        order: 2;
+        text-align: left;
+    }
 }

@@ -23,7 +23,7 @@ const styles = {
     inputForm:{
         height:50,
         border: "none",
-        padding: "20 20",
+        padding: 20,
         borderRadius: 30,
         width: 320
     },

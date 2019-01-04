@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, { Component } from 'react';
 import styles from './style'
 class Stats extends Component{
     render(){
@@ -11,8 +11,8 @@ class Stats extends Component{
                         </div>
                 </div>
                 <div style={styles.sectionContainer}>                    
-                    <div class="section4-img">                       
-                        <img src="./assets/images/statistics.png" alt="" class="img-fluid" />
+                    <div className="section4-img">                       
+                        <img src="./assets/images/statistics.png" alt="" className="img-fluid" />
                     </div> 
                 </div>
                 <div style={styles.sectionFooter}>

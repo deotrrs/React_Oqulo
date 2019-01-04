@@ -3,14 +3,24 @@ import { NavItem } from './index';
 import styles from './style';
 
 class Nav extends Component {
+    handleOnScroll (element) {
+        document.addEventListener('scroll', function (event) {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                element.className = 'app-header-active';
+            } else {
+                element.className = 'app-header';
+            }
+        });
+    }
+
     render () {
         const navItems = [
-            { name: 'DISCOVER OQULO' },
-            { name: 'FEATURES' },
-            { name: 'CONTACT' },
+            { name: 'DISCOVER OQULO', href: '/' },
+            { name: 'FEATURES', href: '/' },
+            { name: 'CONTACT', href: '/' },
         ]
         return (
-            <header style={styles.Header} id='app-header'>
+            <header className="app-header" ref={this.handleOnScroll}>
                 <nav className="container navbar-toggleable-md">
                     <div className="row">
                         <div className="col-6 col-sm-6 col-md-4 col-lg-2">
@@ -27,7 +37,7 @@ class Nav extends Component {
                         <div className="col-12 col-lg-10">
                             <div style={styles.Navigation} className="collapse navbar-collapse" id="navbarNav"> 
                                 <ul className="app-header__list-item" style={styles.NavigationList}>
-                                   {navItems.map((item, i) => <NavItem name={item.name} styles={styles} key={i}/>)}
+                                   {navItems.map((item, i) => <NavItem data={item} styles={styles} key={i}/>)}
                                 </ul>
                             </div> 
                         </div>

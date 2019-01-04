@@ -8,6 +8,17 @@ const styles = {
         zIndex: 1,
         width: '100%'
     },
+    HeaderActive:{
+        padding: 10,
+        position: "fixed",
+        backgroundColor: "rgb(136, 10, 253)",
+        /* opacity: 0.2, */
+        top: 0,
+        left: 0,
+        transition: "0.5s",
+        zIndex: 1,
+        width: "100%",
+    },
     Logo: {
         width: 150
     },
@@ -23,6 +34,7 @@ const styles = {
         float: 'right'
     },
     NavigationListItem: {
+        color:"rgb(255,255,255)",
         display: 'inline-block',
         paddingLeft: 10,
         paddingRight: 10

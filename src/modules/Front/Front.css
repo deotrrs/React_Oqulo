@@ -1,4 +1,7 @@
-h1{
+.hero h1{
+    color:rgb(255, 255, 255);
+}
+h2{
     color:rgb(255, 255, 255);
 }
 h6{
@@ -7,6 +10,26 @@ h6{
 }
 .app {
     position: relative;
+}
+.app-header {
+    left: 0;
+    padding: 60px;
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.app-header-active{
+    padding: 10px;
+    position: fixed;
+    background-color: rgb(136, 10, 253);; 
+    /* opacity: 0.2; */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+    width: 100%;
 }
 .app-header__list-item {
     width: 100%;
@@ -75,6 +98,10 @@ section{
 }
 
 @media (max-width:991px){
+    .hero{
+        height: 1200px;
+        padding-top: 181px;
+    }
     .section3{
         height:1300px;
     }

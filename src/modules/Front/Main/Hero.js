@@ -6,12 +6,12 @@ class Hero extends Component{
             <section className="hero" style={styles.heroBackground}>
                 <div className="container">                    
                     <div className="row">
-                        <div className=" hero-object col-12 col-lg-6" >
+                        <div className="hero-object col-12 col-lg-6 order-sm-2 order-md-2 order-lg-1">
                             <div className="image-object">
                                 <img src="./assets/images/iPhone 7.png" style={styles.heroImage} alt="iphone" />
                             </div>
                         </div>                        
-                        <div className="col-lg-6" style={styles.heroText}>
+                        <div className="col-lg-6 order-sm-1 order-md-1 order-lg-2" style={styles.heroText}>
                             <h1 className="hero-text_heading">
                                 The Only Platform You’ll Need to Run Smart Coworking Spaces & Serviced Offices
                             </h1>
